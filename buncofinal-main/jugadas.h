@@ -424,6 +424,21 @@ int puntaje=0, total=0;
 
     }
 
+    if((valorDados[0]==valorDados[1]+1) && (valorDados[1]+2==valorDados[2])) /// Escalera menor a mayor
+    {
+        puntaje=2;
+
+
+    }
+
+    if((valorDados[0]<valorDados[1]) && (valorDados[1]==valorDados[2]+2)) /// Escalera menor a mayor
+    {
+        puntaje=2;
+
+
+    }
+
+
     if((valorDados[0]==valorDados[1]+2) && (valorDados[1]+1==valorDados[2])) /// Escalera mayor a menor
     {
         puntaje=2;
