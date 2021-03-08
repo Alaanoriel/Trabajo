@@ -416,15 +416,32 @@ int puntaje=0, total=0;
         }
     }
 
-    if((valorDados[0]>valorDados[1]) && (valorDados[1]>valorDados[2])) /// Escalera mayor a menor
+
+    if((valorDados[0]+2==valorDados[1]) && (valorDados[1]==valorDados[2]+1)) /// Escalera menor a mayor
+    {
+        puntaje=2;
+
+
+    }
+
+    if((valorDados[0]==valorDados[1]+2) && (valorDados[1]+1==valorDados[2])) /// Escalera mayor a menor
+    {
+        puntaje=2;
+
+
+    }
+
+
+    if((valorDados[0]==valorDados[1]+1) && (valorDados[1]==valorDados[2]+1)) /// Escalera mayor a menor
     {
         puntaje=2;
     }
 
-    if((valorDados[0]<valorDados[1]) && (valorDados[1]<valorDados[2])) /// Escalera menor a mayor
+    if((valorDados[0]==valorDados[1]-1) && (valorDados[1]==valorDados[2]-1)) /// Escalera menor a mayor
     {
         puntaje=2;
     }
+
 
 
     if(total%5==0) /// Jugada de 3 puntos
